@@ -12,6 +12,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { AppRoutingModule } from './modules/app-routing-module/app-routing.module';
 import { InMemoryDataService } from './services/in-memory-data/in-memory-data.service';
+import { HeroCreateComponent } from './components/hero-create/hero-create.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { InMemoryDataService } from './services/in-memory-data/in-memory-data.se
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroSearchComponent
+    HeroSearchComponent,
+    HeroCreateComponent
   ],
   imports: [
     BrowserModule,

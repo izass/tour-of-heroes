@@ -10,7 +10,7 @@ import { HeroService } from 'src/app/services/hero-service/hero.service';
   styleUrls: ['./hero-detail.component.scss'],
 })
 export class HeroDetailComponent {
-  @Input() hero?: Hero;
+  hero: Hero | undefined;
 
   constructor(
     private route: ActivatedRoute,

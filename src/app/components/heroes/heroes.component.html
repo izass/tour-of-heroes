@@ -10,13 +10,5 @@
     </li>
   </ul>
 
-  <div>
-    <label for="new-hero">Hero name: </label>
-    <input id="new-hero" #heroName />
-
-    <!-- (click) passes input value to add() and then clears the input -->
-    <button type="button" class="add-button" (click)="createHero(heroName.value); heroName.value=''">
-      Add hero
-    </button>
-  </div>
+  <app-hero-create [heroes]="heroes"></app-hero-create>
 </div>
